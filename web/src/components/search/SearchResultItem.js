@@ -5,6 +5,7 @@ import { SearchResultItemStyles } from '../../styles/search/SearchResultItemStyl
 import ParagraphText from '../typography/ParagraphText';
 import { Title } from '../typography/Title';
 
+
 import { SearchModalContext } from '../../contexts/searchModalContext';
 
 function BlogSearchResultItem({ blog }) {
@@ -14,11 +15,11 @@ function BlogSearchResultItem({ blog }) {
       to={`/blogs/${blog.slug.current}`}
       onClick={() => closeSearchModal()}
     >
-      <GatsbyImage
+      {/* <GatsbyImage
         image={blog.coverImage.asset.gatsbyImageData}
         alt={blog.coverImage.alt}
         className="img"
-      />
+      /> */}
       <div>
         <Title className="title">{blog.title}</Title>
         <ParagraphText className="categoriesText">
@@ -29,36 +30,36 @@ function BlogSearchResultItem({ blog }) {
   );
 }
 
-function CategorySearchResultItem({ category }) {
-  const { closeSearchModal } = useContext(SearchModalContext);
-  return (
-    <SearchResultItemStyles
-      to={`/categories/${category.slug.current}`}
-      onClick={() => closeSearchModal()}
-    >
-      <Title className="title">{category.title}</Title>
-    </SearchResultItemStyles>
-  );
-}
+// function CategorySearchResultItem({ category }) {
+//   const { closeSearchModal } = useContext(SearchModalContext);
+//   return (
+//     <SearchResultItemStyles
+//       to={`/categories/${category.slug.current}`}
+//       onClick={() => closeSearchModal()}
+//     >
+//       <Title className="title">{category.title}</Title>
+//     </SearchResultItemStyles>
+//   );
+// }
 
-function AuthorSearchResultItem({ author }) {
-  const { closeSearchModal } = useContext(SearchModalContext);
-  return (
-    <SearchResultItemStyles
-      to={`/authors/${author.slug.current}`}
-      onClick={() => closeSearchModal()}
-    >
-      <GatsbyImage
-        image={author.profileImage.asset.gatsbyImageData}
-        alt={author.profileImage.alt}
-        className="authorProfileImg"
-      />
-      <Title className="title">{author.name}</Title>
-    </SearchResultItemStyles>
-  );
-}
+// function AuthorSearchResultItem({ author }) {
+//   const { closeSearchModal } = useContext(SearchModalContext);
+//   return (
+//     <SearchResultItemStyles
+//       to={`/authors/${author.slug.current}`}
+//       onClick={() => closeSearchModal()}
+//     >
+//       <GatsbyImage
+//         image={author.profileImage.asset.gatsbyImageData}
+//         alt={author.profileImage.alt}
+//         className="authorProfileImg"
+//       />
+//       <Title className="title">{author.name}</Title>
+//     </SearchResultItemStyles>
+//   );
+// }
 export {
-  CategorySearchResultItem,
+  // CategorySearchResultItem,
   BlogSearchResultItem,
-  AuthorSearchResultItem,
+  // AuthorSearchResultItem,
 };

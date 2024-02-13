@@ -4,13 +4,6 @@ import { BlogGridStyles } from '../../styles/blog/BlogGridStyles';
 import BlogItem from './BlogItem';
 
 function BlogGrid({ blogs }) {
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  // };
   return (
     <BlogGridStyles>
       {blogs &&
@@ -19,13 +12,13 @@ function BlogGrid({ blogs }) {
             key={blog.id}
             path={blog.slug.current}
             title={blog.title}
-            categories={blog.categories}
+            // categories={blog.categories}
             author={blog.author}
-            image={{
-              imageData: blog.coverImage.asset.gatsbyImageData,
-              altText: blog.coverImage.alt,
-            }}
-            // publishedAt={blog.publishedAt}
+            // image={{
+            //   imageData: blog.coverImage && blog.coverImage.asset && blog.coverImage.asset.gatsbyImageData,
+            //   altText: blog.coverImage && blog.coverImage.alt,
+            // }}
+
           />
         ))}
     </BlogGridStyles>

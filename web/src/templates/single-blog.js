@@ -67,11 +67,11 @@ function SingleBlog({ data }) {
         <PageSpace top={80} bottom={100}>
           <div className="container">
             <div className="blog-header">
-              <GatsbyImage
+              {/* <GatsbyImage
                 image={blog.coverImage.asset.gatsbyImageData}
                 alt={blog.coverImage.alt}
                 className="blog-cover-image"
-              />
+              /> */}
               <Title className="title">{blog.title}</Title>
               <hr className="hr" />
               <div className="dhig">

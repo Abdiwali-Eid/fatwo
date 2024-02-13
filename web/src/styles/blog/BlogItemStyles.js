@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const BlogItemStyles = styled.div`
   display: inline-block;
   border-radius: 12px;
+  
   .img {
     height: 250px;
     margin-bottom: 1.5rem;
@@ -13,6 +14,13 @@ export const BlogItemStyles = styled.div`
   }
   .title {
     margin-bottom: 0.5rem;
+   
+  }
+ 
+  .ciwaan{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+    background-color: white;
   }
   .publishedAt {
     margin-bottom: 0.3rem;
@@ -33,6 +41,7 @@ export const BlogItemStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .title {
       margin-bottom: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
   }
 `;

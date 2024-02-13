@@ -30,9 +30,9 @@ function SearchResult({
   );
 
   if (
-    blogsResult.length === 0 &&
-    categoriesResult.length === 0 &&
-    authorsResult.length === 0
+    blogsResult.length === 0
+    // categoriesResult.length === 0 
+    // authorsResult.length === 0
   ) {
     return <ParagraphText>No Result Found.</ParagraphText>;
   }
@@ -47,22 +47,24 @@ function SearchResult({
           ))}
         </>
       )}
-      {categoriesResult.length > 0 && (
+
+      {/* {categoriesResult.length > 0 && (
         <>
           <ParagraphText>Categories</ParagraphText>
           {categoriesResult.map((result) => (
             <CategorySearchResultItem key={result.id} category={result} />
           ))}
         </>
-      )}
-      {authorsResult.length > 0 && (
+      )} */}
+      
+      {/* {authorsResult.length > 0 && (
         <>
           <ParagraphText>Authors</ParagraphText>
           {authorsResult.map((result) => (
             <AuthorSearchResultItem key={result.id} author={result} />
           ))}
         </>
-      )}
+      )} */}
     </>
   );
 }

@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions }) => {
     './src/templates/single-author.js'
   );
   const authorListTemplate = require.resolve('./src/templates/author-list.js');
-
+  // const questiontemplate = require.resolve('./src/templates/question.js');
   const { createPage } = actions;
 
   const result = await graphql(`
@@ -58,6 +58,8 @@ exports.createPages = async ({ graphql, actions }) => {
       context: { id: blog.id },
     });
   });
+
+
 
   // single category pages
   categories.forEach((category) => {

@@ -10,27 +10,30 @@ function BlogItem({ path, title, image, categories, author }) {
   return (
     <BlogItemStyles>
       <Link to={`/blogs/${path}`}>
-        <GatsbyImage
+        {/* <GatsbyImage
           image={image.imageData}
           alt={image.altText}
           className="img"
-        />
+        /> */}
       </Link>
-      <Link to={`/blogs/${path}`}>
+      <div className='ciwaan'>
+  <Link to={`/blogs/${path}`}>
         <Title className="title">{title}</Title>
       </Link>
+      </div>
+    
       {/* {publishedAt && (
         <ParagraphText className="publishedAt">
           {format(new Date(publishedAt), 'p, MMMM dd, yyyy')}
         </ParagraphText>
       )} */}
       <ParagraphText className="categoriesText">
-        {categories.map((item, index) => (
+        {/* {categories.map((item, index) => (
           <span key={item.slug.current}>
             <Link to={`/categories/${item.slug.current}`}>{item.title}</Link>
             {index < categories.length - 1 ? ', ' : ''}
           </span>
-        ))}
+        ))} */}
       </ParagraphText>
     </BlogItemStyles>
   );
