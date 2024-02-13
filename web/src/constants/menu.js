@@ -11,10 +11,10 @@ export const menu = [
     title: 'Categories',
     path: '/categories',
   },
-  {
-    title: 'Authors',
-    path: '/authors',
-  },
+  // {
+  //   title: 'Authors',
+  //   path: '/authors',
+  // },
   {
     title: 'Question',
     path: '/question',

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+'https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap'
 export const SingleBlogStyles = styled.div`
   max-width: 700px;
   margin: 0 auto;
@@ -60,6 +60,17 @@ export const SingleBlogStyles = styled.div`
     .bodyCode {
       margin: 2rem 0;
       font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .dhig {
+      display: flex;
+      flex-direction:column
+    };
+    .authorProfileImg {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
   }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroSectionStyles = styled.div`
-  min-height: 80vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,30 +24,23 @@ export const HeroSectionStyles = styled.div`
       z-index: -1;
     }
     .left {
-      width: 40%;
+      width: 100%;
+      text-align: center;
       padding: 50px 0;
       .hero__heading {
-        max-width: 450px;
         font-size: 4rem;
         font-family: 'Poppins', sans-serif;
         font-weight: '700';
-        margin: 0.2rem 0;
+        margin: 0 auto; /* Center align */
+        width: 100%; /* Full width */
       }
       .hero__text {
-        max-width: 350px;
+        width: 100%; /* Full width */
+        margin: 0 auto;
+        margin-top: 1rem;
       }
       .hero__button {
         margin-top: 1.5rem;
-      }
-    }
-    .right {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 60%;
-      height: 100%;
-      .hero__image {
-        margin-top: 60px;
       }
     }
   }
@@ -63,24 +56,15 @@ export const HeroSectionStyles = styled.div`
       &::after {
         width: 100%;
       }
-      .right {
-        position: initial;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        .hero__image {
-          height: 300px;
-          margin: 0 auto;
-        }
-      }
       .left {
         width: 100%;
         margin-top: 1rem;
         padding: 0;
         .hero__heading {
-          max-width: 330px;
           font-size: 3rem;
+        }
+        .hero__text {
+          max-width: 100%;
         }
       }
     }

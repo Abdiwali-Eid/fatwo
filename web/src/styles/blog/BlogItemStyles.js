@@ -41,7 +41,7 @@ export const BlogItemStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .title {
       margin-bottom: 0.5rem;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     
     }
   }
 `;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
 import ParagraphText from '../typography/ParagraphText';
@@ -11,24 +10,14 @@ function HeroSection() {
       <div className="container">
         <div className="hero__wrapper">
           <div className="left">
-            <h1 className="hero__heading">Explore the world with Technology</h1>
+            <h1 className="hero__heading">Explore the world with Technology Explore the world <br/> with Technology</h1>
             <ParagraphText className="hero__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
               ipsum dolor sit amet consectetur adipisicing elit
             </ParagraphText>
-            <Button to="/blogs" tag={Link} className="hero__button">
-              Explore Blogs
+            <Button to="/question" tag={Link} className="hero__button">
+              Waydii su'aal
             </Button>
-          </div>
-          <div className="right">
-            <StaticImage
-              className="hero__image"
-              // src="https://virtualcomputing.nl/wp-content/uploads/2020/07/image.png"
-              src="../../images/hero (1).jpg"
-              alt="vr guy"
-              placeholder="blurred"
-              // objectPosition="50% 30%"
-            />
           </div>
         </div>
       </div>
