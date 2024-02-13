@@ -21,10 +21,11 @@ export default styled.header`
       align-items: center;
       justify-content: center;
       gap: 1rem;
+      margin-right: 10;
       li {
         &:hover {
           a {
-            background: var(--black-2);
+            color: var(--primary);
           }
         }
         a {
@@ -87,7 +88,7 @@ export default styled.header`
             margin: 0.5rem 0;
             &:hover {
               a {
-                background: var(--black-1);
+                color: var(--black);
               }
             }
             a {
@@ -107,7 +108,7 @@ export default styled.header`
           right: 10px;
           border-color: crimson;
           &:hover {
-            background-color: crimson;
+        
             color: var(--white);
           }
         }
