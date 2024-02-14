@@ -1,6 +1,13 @@
 require('dotenv').config('./.env');
 const sanityConfig = require('./sanity-config.js');
 
+// gatsby-node.js
+// exports.onCreateBabelConfig = ({ actions }) => {
+//   actions.setBabelPlugin({
+//     name: 'babel-plugin-lodash',
+//   });
+// };
+
 module.exports = {
   siteMetadata: {
     title: `Fatwo`,
