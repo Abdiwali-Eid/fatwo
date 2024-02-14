@@ -3,16 +3,11 @@ import { Link } from 'gatsby';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
 import ParagraphText from '../typography/ParagraphText';
 import Button from '../buttons/Button';
-// import { Button } from 'react-bootstrap/Button';
-import ToggleButton from 'react-bootstrap/ToggleButton';
 
 function HeroSection() {
   return (
     <HeroSectionStyles>
-      <Button variant="primary"
-                            href="#services"> 
-                        Explore 
-                    </Button>
+   
       <div className="container">
         <div className="hero__wrapper">
           <div className="left">

@@ -77,6 +77,11 @@ const ContactForm = () => {
     <FormContainer>
       <FormTitle>Fadlan, halkaan ku qor su'aasha aad rabtid in lagaaga jawaabo</FormTitle>
       <form onSubmit={sendEmail} ref={form}>
+        {showAlert && (
+          <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
+            Successfully sent! Thanks for reaching out.
+          </Alert>
+        )}
         <FormGroup>
           <Label htmlFor="name">Name:</Label>
           <Input type="text" id="name" name="name" required />
@@ -91,11 +96,6 @@ const ContactForm = () => {
         </FormGroup>
         <SubmitButton type="submit">Submit</SubmitButton>
       </form>
-      {showAlert && (
-        <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
-          Successfully sent! Thanks for reaching out.
-        </Alert>
-      )}
     </FormContainer>
   );
 };
