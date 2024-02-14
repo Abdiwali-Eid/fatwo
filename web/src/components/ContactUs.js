@@ -1,9 +1,8 @@
-// src/components/ContactForm.js
-
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
 
 const FormContainer = styled.div`
   max-width: 600px;
@@ -14,10 +13,6 @@ const FormContainer = styled.div`
 `;
 
 const FormTitle = styled.h2`
-  text-align: center;
-  margin-bottom: 20px;
-`;
-const formdes = styled.p`
   text-align: center;
   margin-bottom: 20px;
 `;
@@ -57,8 +52,8 @@ const SubmitButton = styled.button`
 `;
 
 const ContactForm = () => {
-  const form = useRef();
-    // Handle form submission logic here
+  const [showAlert, setShowAlert] = useState(false);
+  const form = React.useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -69,6 +64,7 @@ const ContactForm = () => {
       })
       .then(
         () => {
+          setShowAlert(true); // Show the alert on successful submission
           console.log('SUCCESS!');
         },
         (error) => {
@@ -79,8 +75,7 @@ const ContactForm = () => {
 
   return (
     <FormContainer>
-    
-      <FormTitle>Fadlan ,halkaan ku qor su'aasha aad rabtid in lagaaga jawaabo</FormTitle>
+      <FormTitle>Fadlan, halkaan ku qor su'aasha aad rabtid in lagaaga jawaabo</FormTitle>
       <form onSubmit={sendEmail} ref={form}>
         <FormGroup>
           <Label htmlFor="name">Name:</Label>
@@ -96,6 +91,11 @@ const ContactForm = () => {
         </FormGroup>
         <SubmitButton type="submit">Submit</SubmitButton>
       </form>
+      {showAlert && (
+        <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
+          Successfully sent! Thanks for reaching out.
+        </Alert>
+      )}
     </FormContainer>
   );
 };
