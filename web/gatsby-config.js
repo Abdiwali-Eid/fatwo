@@ -3,9 +3,9 @@ const sanityConfig = require('./sanity-config.js');
 
 module.exports = {
   siteMetadata: {
-    title: `TechHub-blog`,
-    siteUrl: `https://techhub-blog.netlify.com`,
-    description: `TechHub Blog is a platform for latest technology news and updates.`,
+    title: `Fatwo`,
+    siteUrl: `https://khadar.vercel.app/`,
+    description: `fatwo waa website aad ka helayso su'aalo iyo jawaabo diini ah.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
