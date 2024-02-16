@@ -4,6 +4,8 @@ import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
 import ParagraphText from '../typography/ParagraphText';
 import Button from '../buttons/Button';
 
+
+
 function HeroSection() {
   return (
     <HeroSectionStyles>

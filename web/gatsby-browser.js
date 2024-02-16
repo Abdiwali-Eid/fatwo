@@ -4,6 +4,9 @@ import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/600.css';
 import '@fontsource/inter/500.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// gatsby-browser.js or gatsby-ssr.js
+import 'bootstrap/dist/css/bootstrap.min.css'; // For direct Bootstrap
+
 
 
 import './src/styles/global.css';

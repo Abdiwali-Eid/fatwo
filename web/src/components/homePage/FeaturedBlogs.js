@@ -4,6 +4,7 @@ import { FeaturedBlogsStyles } from '../../styles/homePage/FeaturedBlogsStyles';
 import BlogGrid from '../blog/BlogGrid';
 import ParagraphText from '../typography/ParagraphText';
 import { SectionTitle } from '../typography/Title';
+import { Badge, Button } from 'react-bootstrap';
 
 function FeaturedBlogs() {
   const data = useStaticQuery(graphql`
@@ -49,6 +50,7 @@ function FeaturedBlogs() {
     <FeaturedBlogsStyles>
      
       <SectionTitle>Featured Blogs</SectionTitle>
+ 
       {/* <ParagraphText className="featuredBlogs__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nemo
         ad provident consectetur quis eaque doloribus et, ducimus earum iste est
