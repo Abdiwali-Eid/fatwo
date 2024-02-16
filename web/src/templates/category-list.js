@@ -5,6 +5,7 @@ import SEO from '../components/seo';
 import PageHeader from '../components/PageHeader';
 import CategoryGrid from '../components/category/CategoryGrid';
 import Pagination from '../components/Pagination';
+import { Form } from 'react-bootstrap';
 
 export const CategoryListQuery = graphql`
   query categoriesQuery($limit: Int!, $offset: Int!) {
@@ -38,6 +39,7 @@ function Categories({ data, pageContext }) {
             title="All Categories"
             description="This month will bring about the 88th Academy Awards. Starting in 1928, this prestigious award ceremony..."
           />
+         
           <CategoryGrid categories={categories} />
           {numberOfPages > 1 && (
             <Pagination

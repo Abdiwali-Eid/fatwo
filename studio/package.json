@@ -1,10 +1,10 @@
 {
-	"name": "techhub-blog",
+	"name": "fatwo",
 	"private": true,
 	"version": "1.0.0",
 	"description": "",
 	"main": "package.json",
-	"author": "Shaif Arfan",
+	"author": "Abdiwali Eid",
 	"license": "UNLICENSED",
 	"scripts": {
 		"start": "sanity start",
@@ -13,7 +13,7 @@
 	"keywords": [
 		"sanity",
 		"blog",
-		"techhub"
+		"fatwo"
 	],
 	"dependencies": {
 		"@sanity/base": "^2.25.4",

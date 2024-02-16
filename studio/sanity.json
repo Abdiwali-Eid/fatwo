@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "techHub-blog"
+    "name": "fatwo"
   },
   "plugins": [
     "@sanity/base",
