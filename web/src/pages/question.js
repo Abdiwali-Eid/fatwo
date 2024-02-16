@@ -11,9 +11,14 @@ const QuestionPage = () => {
   return (
     <>
       <SEO title="Question" />
-      <PageSpace top={85} bottom={100}></PageSpace>
+      <PageSpace top={80} bottom={100}>
+        <ContactForm/>
+
+
+       
+      </PageSpace>
  
-     <ContactUs/>
+    
     </>
   );
 };
